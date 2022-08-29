@@ -115,7 +115,7 @@
 
           &.--stealth {
             font-size: min(1.1rem, 1.5vw);
-            color: #9686B0;;
+            color: #9686B0;
           }
         }
       }
@@ -159,31 +159,121 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      max-width: 90vw;
+      margin: {
+        top: 5vw;
+        left: auto;
+        right: auto;
+        bottom: 0;
+      }
       aspect-ratio: 4/1;
       padding: 16px;
-      margin-top: 5vw;
 
       background: linear-gradient(92.78deg, rgba(255, 255, 255, 0.36) 4.51%, rgba(255, 254, 254, 0.24) 100%);
       border: 1px solid rgba(241, 225, 225, 0.19);
       backdrop-filter: blur(12px);
       /* Note: backdrop-filter has minimal browser support */
       border-radius: 61px;
+    }
 
-      .tiles {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 
-        &-item {
-          flex: 0 0 33%;
-          padding: 24px;
-          aspect-ratio: 13/9;
-          border-radius: 50px;
-          background: linear-gradient(180deg, #26153B 0%, #331D60 100%);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    &-item {
+      flex: 0 0 33%;
+      padding: 24px;
+      aspect-ratio: 13/9;
+      border-radius: 50px;
+      background: linear-gradient(180deg, #26153B 0%, #331D60 100%);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .small-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 16px;
+
+      font-family: URW Geometric Extended, sans-serif;
+      font-size: min(1.2rem, 1.3vw);
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.1em;
+      text-align: start;
+
+      text-transform: uppercase;
+      color: var(--n-c-stealth);
+
+      .icon {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+        background: {
+          color: var(--nibiru-bg-transparent);
+          size: 60%;
+          repeat: no-repeat;
+          position: center;
+        };
+
+        &#switch {
+          background-image: url("@/assets/icons/switch.png");
+        }
+        &#hamburger {
+          background-image: url("@/assets/icons/hamburger-align-left.png");
+        }
+        &#search {
+          background-image: url("@/assets/icons/search.png");
         }
       }
     }
+
+    .text {
+      font-family: URW Geometric Extended, sans-serif;
+      font-size: min(2.75rem, 2vw);
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: start;
+
+      .--stealth {
+        color: var(--n-c-stealth);
+      }
+    }
+
+    &-btn {
+      align-self: flex-end;
+      display: flex;
+      margin-top: 16px;
+      padding: 8px 16px 8px 0;
+      border: 0;
+      outline: 0;
+      color: var(--nibiru-text-light);
+      background: var(--nibiru-bg-transparent);
+
+      font-family: URW Geometric Extended, sans-serif;
+      font-size: min(1.5rem, 1.5vw);
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: start;
+    }
+  }
+
+  #sphereLGold {
+    position: absolute;
+    z-index: var(--layer-ground);
+    right: -5vw;
+    bottom: 0;
+    width: max(25vw, 25vh);
+    aspect-ratio: 1/1;
+    background: {
+      color: var(--nibiru-bg-transparent);
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+      image: url("@/assets/img/sphere-large-gold.png");
+    };
   }
 }

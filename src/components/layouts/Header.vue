@@ -4,10 +4,10 @@
     <nav>
       <ol class="nav-list">
         <li class="nav-item">
-          <RouterLink to="/">Technology</RouterLink>
+          <a href="https://docs.nibiru.fi/concepts/readme">Technology</a>
         </li>
         <li class="nav-item">
-          <RouterLink to="/about">Documentation</RouterLink>
+          <a href="https://docs.nibiru.fi/concepts/readme">Documentation</a>
         </li>
       </ol>
     </nav>
@@ -51,7 +51,7 @@ import LogoNibiru from "@/components/LogoNibiru.vue";
       &-item {
         @extend .--plain;
         padding: 8px 16px;
-        font-size: min(1.143rem, 1vw);
+        font-size: min(1.143rem, 1.15vw);
         text-transform: uppercase;
         a {
           @extend .--plain;
