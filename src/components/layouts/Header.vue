@@ -28,7 +28,8 @@ import LogoNibiru from "@/components/LogoNibiru.vue";
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      aspect-ratio: 10/1;
+      min-height: 60px;
+      aspect-ratio: 16/1;
       padding: 8px 16px;
       color: var(--nibiru-text-light);
     }

@@ -15,6 +15,10 @@ import Footer from "@/components/layouts/Footer.vue";
 <style scoped lang="scss">
 @import "./assets/main.scss";
 
+html {
+  overflow-x: hidden;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;

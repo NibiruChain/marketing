@@ -5,9 +5,7 @@
   </button>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
   .button {
@@ -20,7 +18,7 @@
     border: none;
     border-radius: 25px;
     outline: none;
-    background: linear-gradient(360deg, #56452A 0%, #A08353 105.1%);
+    background: var(--nibiru-bg-light);
   }
 
   .icon {
@@ -35,13 +33,13 @@
     };
 
     &#bell {
-      background-image: url("@/assets/icons/bell.png");
+      background-image: url("@/assets/icons/bell-dark.png");
     }
   }
 
   .text {
     margin-left: 8px;
-    color: var(--nibiru-text-light);
+    color: var(--nibiru-text-dark);
     font-size: 1rem;
 
     &.--small {

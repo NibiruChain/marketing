@@ -1,16 +1,8 @@
-<script setup lang="ts">
-import HomeNotificationButton from "@/components/ui/HomeNotificationButton.vue";
-
-</script>
-
 <template>
   <main class="home">
     <h1 class="home-tittle">NIBIRU</h1>
     <div class="home-tittle-image-group">
       <div id="hexagonEarth"></div>
-      <div id="sphereMGold"></div>
-      <div id="sphereSGray"></div>
-      <div id="hexagonMGray"></div>
     </div>
 
     <section class="home-info-container">
@@ -19,22 +11,7 @@ import HomeNotificationButton from "@/components/ui/HomeNotificationButton.vue";
         <p class="text">for the Cosmos ecosystem</p>
         <HomeNotificationButton/>
       </div>
-      <div class="home-info-block">
-        <div class="home-info-item">
-          <i id="globe" class="icon"></i>
-          <div class="text-wrap">
-            <p class="text">99.99%</p>
-            <span class="text --stealth">Lorem ipsum</span>
-          </div>
-        </div>
-        <div class="home-info-item">
-          <i id="energy" class="icon"></i>
-          <div class="text-wrap">
-            <p class="text">&#60;2s per block</p>
-            <span class="text --stealth">Lightning quick</span>
-          </div>
-        </div>
-      </div>
+
     </section>
 
     <section class="home-tiles-container">
@@ -66,11 +43,13 @@ import HomeNotificationButton from "@/components/ui/HomeNotificationButton.vue";
         </div>
       </div>
     </section>
-    <div id="sphereLGold"></div>
-
   </main>
 </template>
 
+<script setup lang="ts">
+import HomeNotificationButton from "@/components/ui/HomeNotificationButton.vue";
+</script>
+
 <style lang="scss">
-  @import "../assets/home";
+@import "../assets/home";
 </style>
