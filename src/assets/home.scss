@@ -5,9 +5,12 @@
   align-items: center;
   width: 100%;
   padding-top: 24px;
+  font-family: var(--font-main);
 
-  &-tittle {
-    font-family: 'Phonk', sans-serif;
+  &-title {
+    font-family: var(--font-main);
+    // TODO include Phonk font in the repo.
+    // font-family: 'Phonk', sans-serif; 
     font-style: normal;
     font-weight: 600;
     font-size: 25vw;
@@ -234,7 +237,8 @@
       color: var(--nibiru-text-light);
       background: var(--nibiru-bg-transparent);
 
-      font-family: URW Geometric Extended, sans-serif;
+      font-family: var(--font-main);
+      // font-family: URW Geometric Extended, sans-serif;
       font-size: min(1.2rem, 1.2vw);
       font-weight: 400;
       line-height: 1.2;

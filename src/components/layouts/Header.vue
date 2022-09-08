@@ -1,10 +1,10 @@
 <template>
   <header class="header-wrapper">
-    <RouterLink class="--plain" to="/"><LogoNibiru/></RouterLink>
+    <RouterLink class="--plain" to="/"><LogoNibiru /></RouterLink>
     <nav>
       <ol class="nav-list">
         <li class="nav-item">
-          <a href="https://docs.nibiru.fi/concepts/readme">Technology</a>
+          <a href="https://github.com/NibiruChain">Technology</a>
         </li>
         <li class="nav-item">
           <a href="https://docs.nibiru.fi/concepts/readme">Documentation</a>
@@ -20,49 +20,50 @@ import LogoNibiru from "@/components/LogoNibiru.vue";
 </script>
 
 <style scoped lang="scss">
-  .header {
-    &-wrapper {
-      position: absolute;
-      z-index: var(--layer-top);
+.header {
+  &-wrapper {
+    position: absolute;
+    z-index: var(--layer-top);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    aspect-ratio: 16/1;
+    padding: 8px 16px;
+    color: var(--nibiru-text-light);
+  }
+}
+
+nav {
+  margin-left: auto;
+  background-color: var(--nibiru-bg-transparent);
+  color: inherit;
+  font-family: var(--font-main);
+
+  .nav {
+    &-list {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-      min-height: 60px;
-      aspect-ratio: 16/1;
+      justify-items: flex-end;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item {
+      @extend .--plain;
       padding: 8px 16px;
-      color: var(--nibiru-text-light);
-    }
-  }
-
-  nav {
-    margin-left: auto;
-    background-color: var(--nibiru-bg-transparent);
-    color: inherit;
-
-    .nav {
-      &-list {
-        display: flex;
-        justify-items: flex-end;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      &-item {
+      font-size: min(1.143rem, 1.15vw);
+      text-transform: uppercase;
+      a {
         @extend .--plain;
-        padding: 8px 16px;
-        font-size: min(1.143rem, 1.15vw);
-        text-transform: uppercase;
-        a {
-          @extend .--plain;
-        }
       }
     }
   }
+}
 
-  .--plain {
-    color: inherit;
-    text-decoration: none;
-  }
+.--plain {
+  color: inherit;
+  text-decoration: none;
+}
 </style>
