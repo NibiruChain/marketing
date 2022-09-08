@@ -21,25 +21,29 @@
               <i id="switch" class="icon"></i>
               Application
             </span>
-          <p class="text">Start doing x, <span class="--stealth">doing y and doing z.</span></p>
-          <button class="home-tiles-btn">Launch app → </button>
+          <p class="text">Access a rich ecosystem of <span class="--stealth">trading protocols.</span></p>
+          <button class="home-tiles-btn">Coming soon... </button>
         </div>
         <div class="home-tiles-item">
             <span class="small-header">
               <i id="hamburger" class="icon"></i>
               DOCUMENTATION
             </span>
-          <p class="text">Read that, <span class="--stealth">and lorem ipsum sot emet.</span></p>
-          <button class="home-tiles-btn">Dig in → </button>
+          <p class="text">Discover more about, <span class="--stealth">Nibiru.</span></p>
+          <button class="home-tiles-btn">
+            <a href="https://docs.nibiru.fi/concepts/readme">Dig in → </a>
+          </button>
         </div>
         <div class="home-tiles-item">
             <span class="small-header">
               <i id="search" class="icon"></i>
               EXPLORER
             </span>
-          <p class="text">You into blocks?</p>
-          <p class="text"><span class="--stealth">Explore our blocks.</span></p>
-          <button class="home-tiles-btn">Explore → </button>
+          <p class="text">Search through blocks, </p>
+          <p class="text"><span class="--stealth">transactions, and other on-chain data.</span></p>
+          <button class="home-tiles-btn">
+            <a href="https://docs.nibiru.fi/concepts/readme">Explore → </a>
+          </button>
         </div>
       </div>
     </section>
