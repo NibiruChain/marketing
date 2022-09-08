@@ -12,14 +12,32 @@
       </ul>
 
       <ul class="footer-list-social">
-        <li class="footer-list-social-item">Reach –
-          <a href="mailto:hello@nibiru.org">
-            <span class="--stealth">hello@nibiru.org</span>
+        <li class="footer-list-social-item">
+          <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
+            <img src="../../assets/img/social/discord.svg" width="20" />
           </a>
         </li>
-        <li class="footer-list-social-item">Read –
-          <a href="https://twitter.com/NibiruChain">
-            <span class="--stealth">@NibiruChain</span>
+        <li class="footer-list-social-item">
+          <a href="https://twitter.com/NibiruChain" target="_blank">
+            <img src="../../assets/img/social/twitter.svg" width="20" />
+          </a>
+        </li>
+        <li class="footer-list-social-item">
+          <a
+            href="https://www.linkedin.com/company/nibiruchain"
+            target="_blank"
+          >
+            <img src="../../assets/img/social/linkedin.svg" width="20" />
+          </a>
+        </li>
+        <li class="footer-list-social-item">
+          <a href="https://nibiruchain.medium.com/" target="_blank">
+            <img src="../../assets/img/social/medium.svg" width="20" />
+          </a>
+        </li>
+        <li class="footer-list-social-item">
+          <a href="https://github.com/NibiruChain" target="_blank">
+            <img src="../../assets/img/social/github.svg" width="20" />
           </a>
         </li>
       </ul>
@@ -32,8 +50,8 @@
 
 <script>
 export default {
-  name: "Footer"
-}
+  name: "Footer",
+};
 </script>
 
 <style scoped lang="scss">
@@ -72,10 +90,11 @@ export default {
       repeat: no-repeat;
       position: center;
       image: url("@/assets/icons/nibiru-full-gray.png");
-    };
+    }
   }
 
-  &-nav, &-list-social {
+  &-nav,
+  &-list-social {
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -90,7 +109,10 @@ export default {
       padding: 4px 8px;
       color: var(--nibiru-text-light);
 
-      > a { text-decoration: none; color: var(--nibiru-text-light); }
+      > a {
+        text-decoration: none;
+        color: var(--nibiru-text-light);
+      }
     }
   }
 
