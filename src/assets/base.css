@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Oxanium:400,700|Montserrat:400,700");
 
+@font-face {
+    font-family: "Phonk";
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+    src: local("Phonk"), url("./fonts/Phonk Regular.otf");
+}
+
 /* basic project colors */
 :root {
   --vt-c-black: #181818;
@@ -54,9 +62,8 @@ body {
   background: var(--nibiru-bg-dark);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: var(--font-main);
-  /* font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+  font-family: Inter, 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
