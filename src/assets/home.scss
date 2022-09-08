@@ -8,12 +8,10 @@
   font-family: var(--font-main);
 
   &-title {
-    font-family: var(--font-main);
-    // TODO include Phonk font in the repo.
-    // font-family: 'Phonk', sans-serif; 
+    font-family: "Phonk", "Montserrat", sans-serif; 
     font-style: normal;
     font-weight: 600;
-    font-size: 25vw;
+    font-size: 22vw;
     line-height: 1.2;
     background: var(--nibiru-text-main-grad);
     -webkit-background-clip: text;
