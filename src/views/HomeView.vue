@@ -9,7 +9,8 @@
       <div class="home-info-block">
         <p class="text">Unlock leverage at scale</p>
         <p class="text">for the Cosmos ecosystem</p>
-        <HomeNotificationButton />
+        <!-- Silencing the CTA below since we don't yet have an action for it. -->
+        <!-- <HomeNotificationButton /> -->
       </div>
     </section>
 
@@ -32,7 +33,7 @@
             DOCUMENTATION
           </span>
           <p class="text">
-            Discover more about, <span class="--stealth">Nibiru.</span>
+            Discover more about <span class="--stealth">Nibiru.</span>
           </p>
           <button class="home-tiles-btn">
             <a href="https://docs.nibiru.fi/concepts/readme">Learn → </a>
