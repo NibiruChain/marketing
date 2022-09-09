@@ -6,6 +6,8 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/marketing/",
+  publicDir: "/public/",
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {

@@ -1,8 +1,11 @@
 {
   "files": [],
   "compilerOptions": {
-    "allowJs": true
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
   },
+
+  "include": ["*.vue", "*.ts"],
   "references": [
     {
       "path": "./tsconfig.config.json"
