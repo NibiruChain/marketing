@@ -19,7 +19,7 @@ export default {
   height: 35px;
   background: {
     color: inherit;
-    image: url("./src/assets/icons/nibiru-mark.png");
+    image: url("../../assets/icons/nibiru-mark.png");
     position: center;
     size: contain;
   }
