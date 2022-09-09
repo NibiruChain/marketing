@@ -11,6 +11,8 @@
         </li>
       </ul>
 
+      <SocialIcons class="footer-list-social" />
+      <!-- 
       <ul class="footer-list-social">
         <li class="footer-list-social-item">
           <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
@@ -40,7 +42,7 @@
             <img src="../../assets/img/social/github.svg" width="20" />
           </a>
         </li>
-      </ul>
+      </ul> -->
     </div>
     <div class="footer-line __second">
       <p class="text --stealth">© 2022 Nibiru Overlords</p>
@@ -49,9 +51,13 @@
 </template>
 
 <script>
-// export default {
-//   name: "FooterLanding",
-// };
+import SocialIcons from "@/components/layouts/SocialIcons.vue";
+export default {
+  // name: "FooterLanding",
+  components: {
+    SocialIcons,
+  },
+};
 </script>
 
 <style scoped lang="scss">

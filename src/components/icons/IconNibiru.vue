@@ -15,8 +15,8 @@ export default {
   &-wrapper {
     display: flex;
   }
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background: {
     color: inherit;
     image: url("../../assets/icons/nibiru-mark.png");
