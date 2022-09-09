@@ -1,19 +1,26 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import Header from "@/components/layouts/Header.vue";
-import Footer from "@/components/layouts/Footer.vue";
+import HeaderLanding from "@/components/layouts/Header.vue";
+import FooterLanding from "@/components/layouts/Footer.vue";
 </script>
 
 <template>
-  <Header />
-  <main class="main">
-    <RouterView />
-  </main>
-  <Footer />
+  <div :class="$props.class">
+    <HeaderLanding />
+    <main class="main">
+      <RouterView />
+    </main>
+    <FooterLanding />
+  </div>
 </template>
 
 <style scoped lang="scss">
 @import "./assets/main.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
 
 html {
   overflow-x: hidden;

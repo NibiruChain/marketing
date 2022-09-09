@@ -1,5 +1,5 @@
 <template>
-  <header class="header-wrapper">
+  <HeaderLanding class="header-wrapper">
     <RouterLink class="--plain" to="/"><LogoNibiru /></RouterLink>
     <nav>
       <ol class="nav-list">
@@ -11,7 +11,7 @@
         </li>
       </ol>
     </nav>
-  </header>
+  </HeaderLanding>
 </template>
 
 <script setup lang="ts">
@@ -28,7 +28,7 @@ import LogoNibiru from "@/components/LogoNibiru.vue";
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-height: 60px;
+    height: 60px;
     aspect-ratio: 16/1;
     padding: 8px 16px;
     color: var(--nibiru-text-light);
@@ -39,7 +39,7 @@ nav {
   margin-left: auto;
   background-color: var(--nibiru-bg-transparent);
   color: inherit;
-  font-family: var(--font-main);
+  font-family: var(--font-montserrat);
 
   .nav {
     &-list {

@@ -14,47 +14,39 @@
       </div>
     </section>
 
-    <section class="home-tiles-container">
-      <div class="home-tiles">
-        <div class="home-tiles-item">
-          <span class="small-header">
-            <i id="switch" class="icon"></i>
-            Application
-          </span>
-          <p class="text">
-            Access a rich ecosystem of
-            <span class="--stealth">trading protocols.</span>
-          </p>
-          <button class="home-tiles-btn">Coming soon...</button>
-        </div>
-        <div class="home-tiles-item">
-          <span class="small-header">
-            <i id="hamburger" class="icon"></i>
-            DOCUMENTATION
-          </span>
-          <p class="text">
-            Discover more about <span class="--stealth">Nibiru.</span>
-          </p>
-          <button class="home-tiles-btn">
-            <a href="https://docs.nibiru.fi/concepts/readme">Learn → </a>
-          </button>
-        </div>
-        <div class="home-tiles-item">
-          <span class="small-header">
-            <i id="search" class="icon"></i>
-            EXPLORER
-          </span>
-          <p class="text">Search through blocks,</p>
-          <p class="text">
-            <span class="--stealth"
-              >transactions, and other on-chain data.</span
-            >
-          </p>
-          <button class="home-tiles-btn">
-            <a href="https://docs.nibiru.fi/concepts/readme">Explore → </a>
-          </button>
-        </div>
-      </div>
+    <section class="home-tiles flex flex-flow-wrap">
+      <a class="home-tiles-item" href="" target="_blank">
+        <span class="small-header">
+          <i id="switch" class="icon"></i>
+          Application
+        </span>
+        <p class="text">
+          Access a rich ecosystem of
+          <span class="--stealth">trading protocols.</span>
+        </p>
+        <button class="home-tiles-btn">Coming soon...</button>
+      </a>
+      <a class="home-tiles-item" href="https://docs.nibiru.fi" target="_blank">
+        <span class="small-header">
+          <i id="hamburger" class="icon"></i>
+          DOCUMENTATION
+        </span>
+        <p class="text">
+          Discover more about <span class="--stealth">Nibiru.</span>
+        </p>
+        <button class="home-tiles-btn">Learn →</button>
+      </a>
+      <a class="home-tiles-item" href="https://explorer.testnet.nibiru.fi" target="_blank">
+        <span class="small-header">
+          <i id="search" class="icon"></i>
+          EXPLORER
+        </span>
+        <p class="text">Search through blocks,</p>
+        <p class="text">
+          <span class="--stealth">transactions, and other on-chain data.</span>
+        </p>
+        <button class="home-tiles-btn">Explore →</button>
+      </a>
     </section>
   </main>
 </template>
