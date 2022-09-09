@@ -5,10 +5,18 @@
   align-items: center;
   width: 100%;
   padding-top: 24px;
-  font-family: var(--font-main);
+  font-family: var(--font-montserrat);
+
+  a, a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    border: 1px solid #F0F0F0;
+  }
 
   &-title {
-    font-family: "Phonk", "Montserrat", sans-serif; 
+    font-family: "Phonk", "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22vw;
@@ -28,12 +36,13 @@
 
       > div {
         position: absolute;
+
         background: {
           color: var(--nibiru-bg-transparent);
           size: contain;
           repeat: no-repeat;
           position: center;
-        };
+        }
       }
 
       #hexagonEarth {
@@ -89,7 +98,7 @@
       align-items: center;
       justify-content: flex-start;
       width: 100%;
-      max-width: 90vw;
+      max-width: 85rem;
       margin: 0 auto;
     }
 
@@ -112,12 +121,13 @@
         width: 25px;
         height: 25px;
         margin-right: 8px;
+
         background: {
           color: var(--nibiru-bg-transparent);
           size: contain;
           repeat: no-repeat;
           position: center;
-        };
+        }
       }
 
       #globe {
@@ -130,42 +140,28 @@
     }
   }
 
+  --tiles-item-height: 270px;
+  --tiles-item-width: calc(1.4 * var(--tiles-item-height));
+
+
   &-tiles {
-    gap: 8px;
-
-    &-container {
-      position: relative;
-      z-index: var(--layer-first);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      max-width: 90vw;
-      margin: {
-        top: 5vw;
-        left: auto;
-        right: auto;
-        bottom: 0;
-      }
-      aspect-ratio: 4/1;
-    }
-
-    flex: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    z-index: var(--layer-first);
+    row-gap: 18px;
+    column-gap: 22px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 
     &-item {
-      flex: 0 0 33%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+      height: var(--tiles-item-height);
+      min-height: calc(var(--tiles-item-height) * 8 / 9);
+      width: var(--tiles-item-width);
       padding: 24px;
-      aspect-ratio: 13/9;
-      border-radius: 50px;
-      background: linear-gradient(180deg, #2B2B2B 0%, #000000 100%);
+      border-radius: 20px;
+      background: linear-gradient(180deg, #2b2b2b 0%, #000000 100%);
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     }
 
@@ -173,13 +169,12 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 15%;
 
-      font-family: URW Geometric Extended, sans-serif;
-      font-size: min(1.2rem, 1.3vw);
+      font-family: var(--font-geometric);
+      font-size: 14px;
       font-weight: 400;
       line-height: 1.4;
-      letter-spacing: 0.1em;
       text-align: start;
 
       text-transform: uppercase;
@@ -190,19 +185,22 @@
         width: 25px;
         height: 25px;
         margin-right: 8px;
+
         background: {
           color: var(--nibiru-bg-transparent);
           size: 60%;
           repeat: no-repeat;
           position: center;
-        };
+        }
 
         &#switch {
           background-image: url("@/assets/icons/switch.png");
         }
+
         &#hamburger {
           background-image: url("@/assets/icons/hamburger-align-left.png");
         }
+
         &#search {
           background-image: url("@/assets/icons/search.png");
         }
@@ -211,7 +209,7 @@
 
     .text {
       font-family: URW Geometric Extended, sans-serif;
-      font-size: min(2.75rem, 2vw);
+      font-size: 28px;
       font-weight: 800;
       line-height: 1.2;
       text-align: start;
@@ -230,9 +228,8 @@
       color: var(--nibiru-text-light);
       background: var(--nibiru-bg-transparent);
 
-      font-family: var(--font-main);
-      // font-family: URW Geometric Extended, sans-serif;
-      font-size: min(1.2rem, 1.2vw);
+      font-family: var(--font-geometric);
+      font-size: 16px;
       font-weight: 400;
       line-height: 1.2;
       text-align: start;
@@ -251,12 +248,13 @@
     bottom: 0;
     width: max(25vw, 25vh);
     aspect-ratio: 1/1;
+
     background: {
       color: var(--nibiru-bg-transparent);
       size: contain;
       repeat: no-repeat;
       position: center;
       image: url("@/assets/img/sphere-large-gold.png");
-    };
+    }
   }
 }

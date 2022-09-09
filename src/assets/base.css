@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Oxanium:400,700|Montserrat:400,700");
 
 @font-face {
-    font-family: "Phonk";
-    font-weight: 600;
-    font-style: normal;
-    font-display: auto;
-    src: local("Phonk"), url("./fonts/Phonk Regular.otf");
+  font-family: "Phonk";
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+  src: local("Phonk"), url("./fonts/Phonk Regular.otf");
+}
+
+@font-face {
+  font-family: "URW Geometric Extended";
+  font-weight: 400;
+  src: local("URW Geometric Extended"),
+    url("./fonts/URWGeometricExt-Regular.ttf");
 }
 
 /* basic project colors */
@@ -14,10 +21,10 @@
   --vt-c-white: #ffffff;
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
-  --n-c-stealth: #9686B0;
+  --n-c-stealth: #9686b0;
 
-  --n-light-1: #F0F0F0;
-  --n-tinted-light: #E5DDE7;
+  --n-light-1: #f0f0f0;
+  --n-tinted-light: #e5dde7;
 
   --layer-ground: 0;
   --layer-first: 1;
@@ -29,18 +36,18 @@
   /* typography */
   --nibiru-text-light: var(--n-light-1);
   --nibiru-text-tinted: var(--n-tinted-light);
-  --nibiru-text-main-grad: linear-gradient(#6B6B6B, #000000);
-  --font-main: "Montserrat", Helvetica;
+  --nibiru-text-main-grad: linear-gradient(#6b6b6b, #000000);
+  --font-montserrat: "Montserrat", Helvetica;
+  --font-geometric: "URW Geometric Extended", Helvetica, sans-serif;
 
   /* backgrounds */
-  --nibiru-bg-transparent: rgba(255, 255, 255, 0.0);
+  --nibiru-bg-transparent: rgba(255, 255, 255, 0);
   --nibiru-bg-dark: var(--vt-c-black);
   --nibiru-bg-light: var(--vt-c-white);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-
   }
 }
 
@@ -62,10 +69,27 @@ body {
   background: var(--nibiru-bg-dark);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: Inter, "Montserrat", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   font-size: 14px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+app {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-flow-wrap {
+  flex-flow: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
 }

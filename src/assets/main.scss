@@ -1,14 +1,15 @@
 .main {
-  overflow-y: hidden;
-  padding: 60px calc(100vh/16) 20%;
+  overflow-y: visible;
+  padding: 0px 6.25vh;
   min-height: 100vh;
   background: {
     color: var(--nibiru-bg-transparent);
     repeat: revert;
     size: 120%;
     position: center bottom;
-    image: linear-gradient(#000000, rgba(0, 0, 0, 0)), url("@/assets/img/background.png");
+    image: linear-gradient(#000000, rgba(0, 0, 0, 0));
   };
+  position: relative;
 }
 
 .text {

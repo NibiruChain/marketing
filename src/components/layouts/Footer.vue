@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <FooterLanding class="footer">
     <div class="footer-line __first">
       <div class="logo-gray"></div>
       <ul class="footer-nav">
@@ -45,13 +45,13 @@
     <div class="footer-line __second">
       <p class="text --stealth">© 2022 Nibiru Overlords</p>
     </div>
-  </section>
+  </FooterLanding>
 </template>
 
 <script>
-export default {
-  name: "Footer",
-};
+// export default {
+//   name: "FooterLanding",
+// };
 </script>
 
 <style scoped lang="scss">
@@ -60,9 +60,8 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  margin-top: calc(-1 * (10% - 10px));
-  min-height: min(5vh, 100px);
-  padding: 16px 24px;
+  height: fit-content;
+  padding: 0px 24px; // vertical horizontal
 
   &-line {
     &.__first {
