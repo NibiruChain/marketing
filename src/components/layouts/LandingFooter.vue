@@ -1,5 +1,5 @@
 <template>
-  <FooterLanding class="footer">
+  <div class="footer">
     <div class="footer-line __first">
       <div class="logo-gray"></div>
       <ul class="footer-nav">
@@ -12,48 +12,16 @@
       </ul>
 
       <SocialIcons class="footer-list-social" />
-      <!-- 
-      <ul class="footer-list-social">
-        <li class="footer-list-social-item">
-          <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
-            <img src="../../assets/img/social/discord.svg" width="20" />
-          </a>
-        </li>
-        <li class="footer-list-social-item">
-          <a href="https://twitter.com/NibiruChain" target="_blank">
-            <img src="../../assets/img/social/twitter.svg" width="20" />
-          </a>
-        </li>
-        <li class="footer-list-social-item">
-          <a
-            href="https://www.linkedin.com/company/nibiruchain"
-            target="_blank"
-          >
-            <img src="../../assets/img/social/linkedin.svg" width="20" />
-          </a>
-        </li>
-        <li class="footer-list-social-item">
-          <a href="https://nibiruchain.medium.com/" target="_blank">
-            <img src="../../assets/img/social/medium.svg" width="20" />
-          </a>
-        </li>
-        <li class="footer-list-social-item">
-          <a href="https://github.com/NibiruChain" target="_blank">
-            <img src="../../assets/img/social/github.svg" width="20" />
-          </a>
-        </li>
-      </ul> -->
     </div>
     <div class="footer-line __second">
-      <p class="text --stealth">© 2022 Nibiru Overlords</p>
+      <p class="text --stealth">© 2022, Nibiru Chain</p>
     </div>
-  </FooterLanding>
+  </div>
 </template>
 
 <script>
 import SocialIcons from "@/components/layouts/SocialIcons.vue";
 export default {
-  // name: "FooterLanding",
   components: {
     SocialIcons,
   },
@@ -104,7 +72,7 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 8px 16px;
+    padding: 8px 8px;
 
     &-item {
       font-family: URW Geometric Extended, sans-serif;

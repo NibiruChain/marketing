@@ -1,22 +1,36 @@
 <template>
-  <HeaderLanding class="header-wrapper">
-    <RouterLink class="--plain" to="/"><LogoNibiru /></RouterLink>
+  <section class="header-wrapper">
+    <RouterLink class="--plain" to="/">
+      <LogoNibiru />
+    </RouterLink>
+    <SocialIcons class="margin-left-auto" />
     <nav>
       <ol class="nav-list">
         <li class="nav-item">
-          <a href="https://github.com/NibiruChain">Technology</a>
+          <a href="https://github.com/NibiruChain">Code</a>
         </li>
         <li class="nav-item">
-          <a href="https://docs.nibiru.fi/concepts/readme">Documentation</a>
+          <a href="https://docs.nibiru.fi/concepts/readme">Docs</a>
         </li>
       </ol>
     </nav>
-  </HeaderLanding>
+  </section>
 </template>
 
-<script setup lang="ts">
+<script>
 import { RouterLink } from "vue-router";
 import LogoNibiru from "@/components/LogoNibiru.vue";
+import SocialIcons from "@/components/layouts/SocialIcons.vue";
+export default {
+  name: "LandingHeader",
+  components: {
+    LogoNibiru,
+    SocialIcons,
+  },
+  methods: {
+    RouterLink: RouterLink,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -25,18 +39,16 @@ import LogoNibiru from "@/components/LogoNibiru.vue";
     position: absolute;
     z-index: var(--layer-top);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 60px;
-    aspect-ratio: 16/1;
     padding: 8px 16px;
     color: var(--nibiru-text-light);
   }
 }
 
 nav {
-  margin-left: auto;
   background-color: var(--nibiru-bg-transparent);
   color: inherit;
   font-family: var(--font-montserrat);
@@ -52,14 +64,18 @@ nav {
 
     &-item {
       @extend .--plain;
-      padding: 8px 16px;
-      font-size: min(1.143rem, 1.15vw);
+      padding: 8px 8px;
+      font-size: 16px;
       text-transform: uppercase;
       a {
         @extend .--plain;
       }
     }
   }
+}
+
+.margin-left-auto {
+  margin-left: auto;
 }
 
 .--plain {

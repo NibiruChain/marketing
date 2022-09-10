@@ -39,10 +39,10 @@
 
     &-item {
       font-family: URW Geometric Extended, sans-serif;
-      font-size: min(1.1rem, 1.2vw);
+      font-size: 16px;
       font-weight: 400;
       text-align: start;
-      padding: 4px 8px;
+      padding: 0px 8px;
       color: var(--nibiru-text-light);
 
       > a {
