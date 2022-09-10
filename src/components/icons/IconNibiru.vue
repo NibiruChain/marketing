@@ -4,10 +4,11 @@
   </span>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "IconNibiru",
-};
+});
 </script>
 
 <style scoped lang="scss">
@@ -15,11 +16,11 @@ export default {
   &-wrapper {
     display: flex;
   }
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background: {
     color: inherit;
-    image: url("./src/assets/icons/nibiru-mark.png");
+    image: url("../../assets/icons/nibiru-mark.png");
     position: center;
     size: contain;
   }

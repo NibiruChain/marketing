@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import HeaderLanding from "@/components/layouts/Header.vue";
-import FooterLanding from "@/components/layouts/Footer.vue";
+import LandingHeader from "@/components/layouts/LandingHeader.vue";
+import LandingFooter from "@/components/layouts/LandingFooter.vue";
 </script>
 
 <template>
   <div :class="$props.class">
-    <HeaderLanding />
+    <LandingHeader />
     <main class="main">
       <RouterView />
     </main>
-    <FooterLanding />
+    <LandingFooter />
   </div>
 </template>
 

@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   padding-top: 24px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-geometric);
 
   a, a:link, a:visited {
     text-decoration: none;
@@ -94,18 +94,20 @@
       position: relative;
       z-index: var(--layer-first);
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: flex-start;
       width: 100%;
-      max-width: 85rem;
+
+      max-width: calc((var(--tiles-item-width) * 3) + (2 * var(--tiles-item-col-gap)));
       margin: 0 auto;
     }
 
     &-block {
       &:first-child > .text {
-        font-size: min(2.225rem, 2vw);
-        line-height: 1.2;
+        font-size: 27px;
+        line-height: 1.1;
+        width: 357px;
       }
     }
 
@@ -140,15 +142,15 @@
     }
   }
 
-  --tiles-item-height: 270px;
+  --tiles-item-height: 255px;
+  --tiles-item-col-gap: 22px;
   --tiles-item-width: calc(1.4 * var(--tiles-item-height));
-
 
   &-tiles {
     z-index: var(--layer-first);
     row-gap: 18px;
     column-gap: 22px;
-    margin-top: 50px;
+    margin-top: 3.5rem;
     margin-bottom: 40px;
 
     &-item {
@@ -159,6 +161,7 @@
       height: var(--tiles-item-height);
       min-height: calc(var(--tiles-item-height) * 8 / 9);
       width: var(--tiles-item-width);
+      max-width: 95vw;
       padding: 24px;
       border-radius: 20px;
       background: linear-gradient(180deg, #2b2b2b 0%, #000000 100%);
@@ -169,7 +172,8 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-bottom: 15%;
+      margin-bottom: 12%;
+      height: 12%;
 
       font-family: var(--font-geometric);
       font-size: 14px;
@@ -209,7 +213,7 @@
 
     .text {
       font-family: URW Geometric Extended, sans-serif;
-      font-size: 28px;
+      font-size: 27px;
       font-weight: 800;
       line-height: 1.2;
       text-align: start;

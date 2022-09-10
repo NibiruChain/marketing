@@ -7,8 +7,7 @@
 
     <section class="home-info-container">
       <div class="home-info-block">
-        <p class="text">Unlock leverage at scale</p>
-        <p class="text">for the Cosmos ecosystem</p>
+        <p class="text">Unlock leverage at scale for the Cosmos ecosystem</p>
         <!-- Silencing the CTA below since we don't yet have an action for it. -->
         <!-- <HomeNotificationButton /> -->
       </div>
@@ -21,8 +20,9 @@
           Application
         </span>
         <p class="text">
-          Access a rich ecosystem of
-          <span class="--stealth">trading protocols.</span>
+          Access a
+          <span class="--stealth">rich ecosystem </span>
+          of trading protocols.
         </p>
         <button class="home-tiles-btn">Coming soon...</button>
       </a>
@@ -36,14 +36,18 @@
         </p>
         <button class="home-tiles-btn">Learn →</button>
       </a>
-      <a class="home-tiles-item" href="https://explorer.testnet.nibiru.fi" target="_blank">
+      <a
+        class="home-tiles-item"
+        href="https://explorer.testnet.nibiru.fi"
+        target="_blank"
+      >
         <span class="small-header">
           <i id="search" class="icon"></i>
           EXPLORER
         </span>
-        <p class="text">Search through blocks,</p>
+        <p class="text">Search through</p>
         <p class="text">
-          <span class="--stealth">transactions, and other on-chain data.</span>
+          <span class="--stealth">blocks and transactions.</span>
         </p>
         <button class="home-tiles-btn">Explore →</button>
       </a>
@@ -52,7 +56,7 @@
 </template>
 
 <script setup lang="ts">
-import HomeNotificationButton from "@/components/ui/HomeNotificationButton.vue";
+// import HomeNotificationButton from "@/components/ui/HomeNotificationButton.vue";
 </script>
 
 <style lang="scss">

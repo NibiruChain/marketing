@@ -5,8 +5,13 @@
   </a>
 </template>
 
-<script setup lang="ts">
+<script>
 import IconNibiru from "@/components/icons/IconNibiru.vue";
+export default {
+  components: {
+    IconNibiru,
+  },
+};
 </script>
 
 <style scoped lang="scss">
