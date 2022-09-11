@@ -109,7 +109,7 @@
         font-size: 27px;
         line-height: 1.1;
         width: 357px;
-        max-width: var(--mobile-max-width);
+        max-width: calc(var(--mobile-max-width) - 4vw);
       }
     }
 
