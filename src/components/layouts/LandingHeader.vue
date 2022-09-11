@@ -4,7 +4,7 @@
       <LogoNibiru />
     </RouterLink>
     <SocialIcons class="margin-left-auto" />
-    <nav>
+    <nav class="can-toggle">
       <ol class="nav-list">
         <li class="nav-item">
           <a href="https://github.com/NibiruChain">Code</a>
@@ -71,6 +71,12 @@ nav {
         @extend .--plain;
       }
     }
+  }
+}
+
+@media (max-width: 550px) {
+  nav {
+    display: none !important;
   }
 }
 
