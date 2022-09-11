@@ -4,7 +4,7 @@
       <LogoNibiru />
     </RouterLink>
     <SocialIcons class="margin-left-auto" />
-    <nav class="can-toggle">
+    <nav>
       <ol class="nav-list">
         <li class="nav-item">
           <a href="https://github.com/NibiruChain">Code</a>
