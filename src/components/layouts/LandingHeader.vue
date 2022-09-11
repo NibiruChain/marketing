@@ -74,9 +74,20 @@ nav {
   }
 }
 
+// Example: Common iPhones
 @media (max-width: 550px) {
   nav {
     display: none !important;
+  }
+}
+
+// Example: Galaxy Fold
+@media (max-width: 325px) {
+  .--plain {
+    display: none !important;
+  }
+  .margin-left-auto {
+    margin-right: auto;
   }
 }
 
