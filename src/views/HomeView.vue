@@ -2,7 +2,7 @@
   <main class="home">
     <h1 class="home-title">NIBIRU</h1>
     <div class="home-title-image-group">
-      <div id="hexagonEarth"></div>
+      <!-- <div id="hexagonEarth"></div> -->
     </div>
 
     <section class="home-info-container">
