@@ -10,7 +10,7 @@
           <a href="https://github.com/NibiruChain">Code</a>
         </li>
         <li class="nav-item">
-          <a href="https://docs.nibiru.fi/concepts/readme">Docs</a>
+          <a href="https://docs.nibiru.fi">Docs</a>
         </li>
       </ol>
     </nav>
