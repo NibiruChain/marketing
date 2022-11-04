@@ -16,7 +16,7 @@
       </a>
     </li>
     <li class="socials-list-item">
-      <a href="https://nibiruchain.medium.com/" target="_blank">
+      <a href="https://blog.nibiru.fi" target="_blank">
         <img src="../../assets/img/social/medium.svg" width="20" />
       </a>
     </li>

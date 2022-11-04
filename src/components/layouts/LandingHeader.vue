@@ -7,10 +7,10 @@
     <nav>
       <ol class="nav-list">
         <li class="nav-item">
-          <a href="@/assets/terms-and-conditions-nibiru.pdf">Code</a>
+          <a href="https://github.com/NibiruChain">Code</a>
         </li>
         <li class="nav-item">
-          <a href="@/assets/privacy-policy-nibiru.pdf">Docs</a>
+          <a href="https://docs.nibiru.fi">Docs</a>
         </li>
       </ol>
     </nav>
@@ -71,6 +71,23 @@ nav {
         @extend .--plain;
       }
     }
+  }
+}
+
+// Example: Common iPhones
+@media (max-width: 550px) {
+  nav {
+    display: none !important;
+  }
+}
+
+// Example: Galaxy Fold
+@media (max-width: 325px) {
+  .--plain {
+    display: none !important;
+  }
+  .margin-left-auto {
+    margin-right: auto;
   }
 }
 
