@@ -1,6 +1,7 @@
 # Production deployment
 npm run build
 echo nibiru.fi > dist/CNAME
+cp -r public/* dist/
 # git subtree push --prefix dist origin gh-pages
 
 cd dist 
