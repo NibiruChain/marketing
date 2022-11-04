@@ -7,10 +7,10 @@
     <nav>
       <ol class="nav-list">
         <li class="nav-item">
-          <a href="https://github.com/NibiruChain">Code</a>
+          <a href="@/assets/terms-and-conditions-nibiru.pdf">Code</a>
         </li>
         <li class="nav-item">
-          <a href="https://docs.nibiru.fi/concepts/readme">Docs</a>
+          <a href="@/assets/privacy-policy-nibiru.pdf">Docs</a>
         </li>
       </ol>
     </nav>

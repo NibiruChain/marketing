@@ -14,7 +14,7 @@
     </section>
 
     <section class="home-tiles flex flex-flow-wrap">
-      <a class="home-tiles-item" href="" target="_blank">
+      <div class="home-tiles-item" href="" target="_blank">
         <span class="small-header">
           <i id="switch" class="icon"></i>
           Application
@@ -25,7 +25,7 @@
           of trading protocols.
         </p>
         <button class="home-tiles-btn">Coming soon...</button>
-      </a>
+      </div>
       <a class="home-tiles-item" href="https://docs.nibiru.fi" target="_blank">
         <span class="small-header">
           <i id="hamburger" class="icon"></i>

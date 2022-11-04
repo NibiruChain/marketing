@@ -4,10 +4,10 @@
       <div class="logo-gray"></div>
       <ul class="footer-nav">
         <li class="footer-nav-item">
-          <a href="https://docs.nibiru.fi/concepts/readme">Terms</a>
+          <a href="terms-and-conditions-nibiru.pdf">Terms</a>
         </li>
         <li class="footer-nav-item">
-          <a href="https://docs.nibiru.fi/concepts/readme">Privacy</a>
+          <a href="https://docs.nibiru.fi">Privacy</a>
         </li>
       </ul>
 
