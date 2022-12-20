@@ -5,14 +5,17 @@
     </RouterLink>
     <SocialIcons class="margin-left-auto" />
     <nav>
-      <ol class="nav-list">
+      <ul class="nav-list">
         <li class="nav-item">
           <a href="https://github.com/NibiruChain">Code</a>
         </li>
         <li class="nav-item">
           <a href="https://docs.nibiru.fi">Docs</a>
         </li>
-      </ol>
+        <li class="nav-item">
+          <a href="https://blog.nibiru.fi">Blog</a>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>

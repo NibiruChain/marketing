@@ -1,36 +1,34 @@
 <template>
   <main class="home">
     <h1 class="home-title">NIBIRU</h1>
-    <div class="home-title-image-group">
-      <!-- <div id="hexagonEarth"></div> -->
-    </div>
+    <div class="home-title-image-group"></div>
 
     <section class="home-info-container">
       <div class="home-info-block">
-        <p class="text">Unlock leverage at scale for the Cosmos ecosystem</p>
+        <h2 class="text">Unlock leverage at scale for the Cosmos ecosystem</h2>
         <!-- Silencing the CTA below since we don't yet have an action for it. -->
         <!-- <HomeNotificationButton /> -->
       </div>
     </section>
 
     <section class="home-tiles flex flex-flow-wrap">
-      <div class="home-tiles-item" href="" target="_blank">
-        <span class="small-header">
+      <a class="home-tiles-item" href="https://app.nibiru.fi" target="_blank">
+        <header class="small-header">
           <i id="switch" class="icon"></i>
           Application
-        </span>
+        </header>
         <p class="text">
           Access a
           <span class="--stealth">rich ecosystem </span>
           of trading protocols.
         </p>
-        <button class="home-tiles-btn">Coming soon...</button>
-      </div>
+        <button class="home-tiles-btn">Launch app →</button>
+      </a>
       <a class="home-tiles-item" href="https://docs.nibiru.fi" target="_blank">
-        <span class="small-header">
+        <header class="small-header">
           <i id="hamburger" class="icon"></i>
           DOCUMENTATION
-        </span>
+        </header>
         <p class="text">
           Discover more about <span class="--stealth">Nibiru.</span>
         </p>
@@ -41,10 +39,10 @@
         href="https://explorer.testnet.nibiru.fi"
         target="_blank"
       >
-        <span class="small-header">
+        <header class="small-header">
           <i id="search" class="icon"></i>
           EXPLORER
-        </span>
+        </header>
         <p class="text">Search through</p>
         <p class="text">
           <span class="--stealth">blocks and transactions.</span>

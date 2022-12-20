@@ -14,6 +14,10 @@
   }
   a:hover {
     border: 1px solid #F0F0F0;
+    background: #1F1F1F;
+  }
+  button:hover {
+    cursor: pointer;
   }
 
   &-title {

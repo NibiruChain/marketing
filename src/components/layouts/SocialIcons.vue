@@ -1,11 +1,6 @@
 <template>
   <ul class="socials-list">
     <li class="socials-list-item">
-      <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
-        <img src="../../assets/img/social/discord.svg" width="20" />
-      </a>
-    </li>
-    <li class="socials-list-item">
       <a href="https://twitter.com/NibiruChain" target="_blank">
         <img src="../../assets/img/social/twitter.svg" width="20" />
       </a>
@@ -23,6 +18,11 @@
     <li class="socials-list-item">
       <a href="https://github.com/NibiruChain" target="_blank">
         <img src="../../assets/img/social/github.svg" width="20" />
+      </a>
+    </li>
+    <li class="socials-list-item">
+      <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
+        <img src="../../assets/img/social/discord.svg" width="20" />
       </a>
     </li>
   </ul>
