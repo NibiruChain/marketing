@@ -1,13 +1,13 @@
 <template>
   <ul class="socials-list">
     <li class="socials-list-item">
-      <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
-        <img src="../../assets/img/social/discord.svg" width="20" />
+      <a href="https://twitter.com/NibiruChain" target="_blank">
+        <img src="../../assets/img/social/twitter.svg" width="20" />
       </a>
     </li>
     <li class="socials-list-item">
-      <a href="https://twitter.com/NibiruChain" target="_blank">
-        <img src="../../assets/img/social/twitter.svg" width="20" />
+      <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
+        <img src="../../assets/img/social/discord.svg" width="20" />
       </a>
     </li>
     <li class="socials-list-item">

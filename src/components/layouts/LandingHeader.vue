@@ -1,20 +1,23 @@
 <template>
-  <section class="header-wrapper">
+  <header class="header-wrapper">
     <RouterLink class="--plain" to="/">
       <LogoNibiru />
     </RouterLink>
     <SocialIcons class="margin-left-auto" />
     <nav>
-      <ol class="nav-list">
+      <ul class="nav-list">
         <li class="nav-item">
           <a href="https://github.com/NibiruChain">Code</a>
         </li>
         <li class="nav-item">
           <a href="https://docs.nibiru.fi">Docs</a>
         </li>
-      </ol>
+        <li class="nav-item">
+          <a href="https://blog.nibiru.fi">Blog</a>
+        </li>
+      </ul>
     </nav>
-  </section>
+  </header>
 </template>
 
 <script>
@@ -69,6 +72,13 @@ nav {
       text-transform: uppercase;
       a {
         @extend .--plain;
+      }
+
+      :hover {
+        overflow: visible;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+          0 0 120px #fff, 0 0 160px #fff;
+        transition: 0.5s;
       }
     }
   }

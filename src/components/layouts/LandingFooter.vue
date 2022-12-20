@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="footer-line __first">
       <div class="logo-gray"></div>
       <ul class="footer-nav">
@@ -16,7 +16,7 @@
     <div class="footer-line __second">
       <p class="text --stealth">© 2022, Nibiru Chain</p>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
