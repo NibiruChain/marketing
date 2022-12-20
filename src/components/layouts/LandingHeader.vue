@@ -1,5 +1,5 @@
 <template>
-  <section class="header-wrapper">
+  <header class="header-wrapper">
     <RouterLink class="--plain" to="/">
       <LogoNibiru />
     </RouterLink>
@@ -14,7 +14,7 @@
         </li>
       </ol>
     </nav>
-  </section>
+  </header>
 </template>
 
 <script>
