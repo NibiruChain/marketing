@@ -73,6 +73,13 @@ nav {
       a {
         @extend .--plain;
       }
+
+      :hover {
+        overflow: visible;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+          0 0 120px #fff, 0 0 160px #fff;
+        transition: 0.5s;
+      }
     }
   }
 }

@@ -15,8 +15,6 @@ import LandingFooter from "@/components/layouts/LandingFooter.vue";
 </template>
 
 <style scoped lang="scss">
-@import "./assets/main.scss";
-
 .app {
   display: flex;
   flex-direction: column;
@@ -81,4 +79,43 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+
+.main {
+  overflow-y: visible;
+  padding: 0px 6.25vw;
+  min-height: 100vh;
+  background: {
+    color: var(--nibiru-bg-transparent);
+    repeat: revert;
+    size: 120%;
+    position: center bottom;
+    image: linear-gradient(#000000, rgba(0, 0, 0, 0));
+  };
+  position: relative;
+}
+
+.text {
+  color: var(--nibiru-text-light);
+  font-size: 1rem;
+
+  &.--small {
+    font-size: min(0.8rem, 1.1vw);
+  }
+  &.--stealth {
+    font-size: min(1.1rem, 1.5vw);
+    color: var(--n-c-stealth);
+  }
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background: {
+    color: var(--nibiru-bg-transparent);
+    size: contain;
+    repeat: no-repeat;
+    position: center;
+  };
+}
+
 </style>

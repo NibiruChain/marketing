@@ -6,6 +6,11 @@
       </a>
     </li>
     <li class="socials-list-item">
+      <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
+        <img src="../../assets/img/social/discord.svg" width="20" />
+      </a>
+    </li>
+    <li class="socials-list-item">
       <a href="https://www.linkedin.com/company/nibiruchain" target="_blank">
         <img src="../../assets/img/social/linkedin.svg" width="20" />
       </a>
@@ -18,11 +23,6 @@
     <li class="socials-list-item">
       <a href="https://github.com/NibiruChain" target="_blank">
         <img src="../../assets/img/social/github.svg" width="20" />
-      </a>
-    </li>
-    <li class="socials-list-item">
-      <a href="https://discord.gg/sgPw8ZYfpQ" target="_blank">
-        <img src="../../assets/img/social/discord.svg" width="20" />
       </a>
     </li>
   </ul>
